@@ -1,8 +1,11 @@
+
+/*
 variable "ibmcloud_api_key" {
     default     = "3xlibMHImbejbAQLdu1zaWyArejAwAyuxul8TeeLu1tZ"
     description = "Ingresar API Key del administrador DevOps"
 }
 
+*/
 variable "vpc-name" {
   default     = "gtg-vpc-demo"
   description = "Ingresar nombre de la VPC"
@@ -18,6 +21,7 @@ variable "zone" {
   description = "Define la zona 'us-south-1'"
 }
 
+/*
 variable "vpc-secure-bastion-subnet" {
   default     = "10.240.0.0/24"
   description = "Define la Subnet vpc-secure-bastion-subnet '10.240.0.0/24'"
@@ -92,3 +96,4 @@ variable "iam_access_testers_members" {
   default     = ["giancarlo.tupac@ibm.com"]
   description = "Ingresar los correos de los usuarios separados por comas: "
 }
+*/
