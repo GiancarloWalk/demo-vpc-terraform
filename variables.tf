@@ -30,7 +30,7 @@ variable "vpc-pubpriv-frontend-subnet" {
 }
 
 variable "ssh_public_key" {
-  default     = "C:/Users/GiancarloGutierrez/Desktop/tf-vpc v3/ssh-key/id_rsa.pub"
+  default     = "ssh_pub_key.pub"
   description = "Define la ruta del ssh publc key"
 
 }
@@ -59,7 +59,7 @@ variable "vsi-profile-frontend" {
 }
 
 variable "filepath_frontend_init" {
-  default     = "C:/Users/GiancarloGutierrez/Desktop/tf-vpc v3/user_data/frontend_init.sh"
+  default     = "frontend_init.sh"
   description = "Ruta del init: "
 }
 
@@ -73,7 +73,7 @@ variable "vsi-profile-backend" {
 }
 
 variable "filepath_backend_init" {
-  default     = "C:/Users/GiancarloGutierrez/Desktop/tf-vpc v3/user_data/backend_init.sh"
+  default     = "backend_init.sh"
   description = "Ruta del init: "
 }
 
