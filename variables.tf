@@ -1,11 +1,3 @@
-
-/*
-variable "ibmcloud_api_key" {
-    default     = "3xlibMHImbejbAQLdu1zaWyArejAwAyuxul8TeeLu1tZ"
-    description = "Ingresar API Key del administrador DevOps"
-}
-
-*/
 variable "vpc-name" {
   default     = "gtg-vpc-demo"
   description = "Ingresar nombre de la VPC"
