@@ -85,7 +85,7 @@ variable "vsi-profile-frontend" {
   default     = "cc1-2x4"
   description = "profile de del vsi cc1-2x4"
 }
-variable "filepath_frontend_init"{
+variable "filepath_frontend_init" {
   default     = "C:/Users/GiancarloGutierrez/Desktop/tf-vpc v3/user_data/frontend_init.sh"
   description = "Ruta del init: "
 }
@@ -103,7 +103,7 @@ variable "vsi-profile-backend" {
   description = "profile de del vsi cc1-2x4"
 }
 
-variable "filepath_backend_init"{
+variable "filepath_backend_init" {
   default     = "C:/Users/GiancarloGutierrez/Desktop/tf-vpc v3/user_data/backend_init.sh"
   description = "Ruta del init: "
 }
@@ -112,14 +112,14 @@ variable "filepath_backend_init"{
 #---------------------------------------------------------
 
 #Devs
-variable "iam_access_devs_members"{
+variable "iam_access_devs_members" {
   type        = "list"
   default     = ["giancarlo.tupac@hotmail.com"]
   description = "Ingresar los correos de los usuarios separados por comas: "
 }
 
 #Testers
-variable "iam_access_testers_members"{
+variable "iam_access_testers_members" {
   type        = "list"
   default     = ["giancarlo.tupac@ibm.com"]
   description = "Ingresar los correos de los usuarios separados por comas: "
