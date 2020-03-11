@@ -29,11 +29,12 @@ variable "vpc-pubpriv-frontend-subnet" {
   description = "Define la Subnet vpc-pubpriv-frontend-subnet '10.240.2.0/24'"
 }
 
+/*
 variable "ssh_public_key" {
   default     = "ssh_pub_key.pub"
   description = "Define la ruta del ssh publc key"
-
 }
+*/
 
 variable "image" {
   default     = "7eb4e35b-4257-56f8-d7da-326d85452591"
@@ -58,10 +59,12 @@ variable "vsi-profile-frontend" {
   description = "profile de del vsi cc1-2x4"
 }
 
+/*
 variable "filepath_frontend_init" {
   default     = "frontend_init.sh"
   description = "Ruta del init: "
 }
+*/
 
 variable "vsi-backend-name" {
   default     = "vpc-pubpriv-backend-vsi"
@@ -72,10 +75,12 @@ variable "vsi-profile-backend" {
   description = "profile de del vsi cc1-2x4"
 }
 
+/*
 variable "filepath_backend_init" {
   default     = "backend_init.sh"
   description = "Ruta del init: "
 }
+*/
 
 variable "iam_access_devs_members" {
   type        = "list"
