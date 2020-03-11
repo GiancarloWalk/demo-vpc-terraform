@@ -15,6 +15,7 @@ resource "ibm_is_instance" "vsi-bastion" {
 
   vpc                 = "${ibm_is_vpc.vpc1.id}"
   zone                = "${var.zone}"
+  keys                = ["demo"]
   /*keys                = ["${ibm_is_ssh_key.sshkey.id}"]*/
   resource_group      = "${data.ibm_resource_group.resource_group.id}"
 }
@@ -33,6 +34,7 @@ resource "ibm_is_instance" "vsi-frontend" {
 
   vpc                 = "${ibm_is_vpc.vpc1.id}"
   zone                = "${var.zone}"
+  keys                = ["demo"]
   /*keys                = ["${ibm_is_ssh_key.sshkey.id}"]*/
   /*user_data           = "${file("${var.filepath_frontend_init}")}"*/
   resource_group      = "${data.ibm_resource_group.resource_group.id}"
@@ -51,6 +53,7 @@ resource "ibm_is_instance" "vsi-backend" {
   
   vpc                 = "${ibm_is_vpc.vpc1.id}"
   zone                = "${var.zone}"
+  keys                = ["demo"]
   /*keys                = ["${ibm_is_ssh_key.sshkey.id}"]*/
   /*user_data           = "${file("${var.filepath_backend_init}")}"*/
   resource_group      = "${data.ibm_resource_group.resource_group.id}"
