@@ -79,10 +79,10 @@ variable "filepath_backend_init" {
 
 variable "iam_access_devs_members" {
   type        = "list"
-  description = "Ingresar los correos de los usuarios separados por comas: "
+  description = "Ingresar los correos de los usuarios separados por comas y entre corchetes: "
 }
 
 variable "iam_access_testers_members" {
   type        = "list"
-  description = "Ingresar los correos de los usuarios separados por comas: "
+  description = "Ingresar los correos de los usuarios separados por comas y entre corchetes: "
 }
